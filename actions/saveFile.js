@@ -6,7 +6,7 @@ var PATH = "path";
 var SIZE = "size";
 var SIZE_LIMIT = 6291456;
 var INDEX_FIELD = "index";
-var destPath = __dirname + "\\solutions\\"
+var destPath = __dirname + "\\uploads\\"
 var task =  function(request, callback){	
 	var field = request.files[FIELD_NAME];
 	var size = field[SIZE];
@@ -32,7 +32,6 @@ var task =  function(request, callback){
 				callback(err);
 				return;
 			}	
-			console.log("saved")
 			callback(null, fileName + " saved succesfully." + (overwritten ?  " Previous version was overwritten" : ""));
 	  	});
 	});
