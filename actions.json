@@ -1,0 +1,4 @@
+[
+	{"path": "/uploadForm", "action":{"template":"uploadForm.ejs", "params":[]} },
+	{"path":"/save","action":"saveFile"}
+]
