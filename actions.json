@@ -1,4 +1,6 @@
 [
+	{"path": "/", "action":{"template":"accesskey.ejs", "params":[]} },
 	{"path": "/uploadForm", "action":{"template":"uploadForm.ejs", "params":[]} },
-	{"path":"/save","action":"saveFile"}
+	{"path":"/save","action":"saveFile"},	
+	{"path":"/getModels","action":"getModels"}
 ]

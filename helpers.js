@@ -88,7 +88,7 @@ var encode = function(obj, encoding) {
 
 var readJSONFile = function(fileName){
 	if(!fs.existsSync(fileName)) {
-		console.log("unable to open file: " + fileName);
+		console.log("unable to find file: " + fileName + " in " + __dirname);
 		throw new Error("unable to open file: " + fileName);
 	}
 	var data = fs.readFileSync(fileName, {encoding:'utf8'});
